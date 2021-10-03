@@ -8,3 +8,6 @@ body{
 .center {
   text-align: center;
 }
+.link {
+  text-decoration: none;
+}
