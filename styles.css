@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+  }
+  .bgbox {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg,#00d0ff 0,#2eff43),url(images/base_backup.png);
+    background-position: center;
+    background-blend-mode: multiply;
+    animation: c .7s infinite alternate;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @-webkit-keyframes c{
+    0%{
+      -webkit-filter:hue-rotate(0deg)
+    }
+    50%{
+      -webkit-filter:hue-rotate(90deg)
+    }
+    to {
+      -webkit-filter:hue-rotate(0deg)
+    }
+  }
