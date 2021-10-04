@@ -231,7 +231,8 @@ input {
   border-radius:7px;
   font-size:20px;
   padding:5px;
-  margin-top:-10px;    
+  margin-top:-10px;  
+  text-align: center;  
 }
 
 input:focus { 
