@@ -26,7 +26,8 @@ h1 {
   user-select: none;
   white-space: nowrap;
   filter: blur(0.007em);
-  animation: shake 2.5s linear forwards;
+  animation: shake 2.5s linear forwards infinite,rainbow 2.5s linear forwards infinite;
+  text-align: center;
 }
 
 h1 span {
@@ -103,4 +104,103 @@ h1::after {
   100% {
       transform: translate(-49%, -53%);
   }
+}
+
+
+.backstretch {
+  width: 100vw;
+  height: 400px;
+  background: #1e5799; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #1e5799 0%, #7db9e8 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#1e5799), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #1e5799 0%,#7db9e8 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #1e5799 0%,#7db9e8 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+  
+.backstretch.animated {
+  -webkit-animation: filter-animation 8s infinite;
+  animation: filter-animation 8s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  
+  50% {
+    -webkit-filter: hue-rotate(100deg);
+  }
+  
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+  }
+}
+
+@keyframes filter-animation {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  
+  50% {
+    filter: hue-rotate(100deg);
+  }
+  
+  100% {
+    filter: hue-rotate(0deg);
+  }
+}
+h2 {
+  position: relative;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: calc(20px + 1vw);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.15em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  -webkit-animation: rainbow 4s steps(36) infinite;
+  text-align: center;
+}
+
+p {
+  position: relative;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: calc(20px + 1vw);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.15em #1da9cc;
+  user-select: none;
+  white-space: nowrap;
+  filter: blur(0.007em);
+  -webkit-animation: rainbow 4s steps(36) infinite;
+  text-align: center;
+}
+
+@-webkit-keyframes rainbow {
+   from { -webkit-filter:hue-rotate(10deg); }
+     to { -webkit-filter:hue-rotate(360deg); }
+}
+
+@keyframes rainbow {
+ from {
+    -webkit-filter:hue-rotate(10deg);
+            filter:hue-rotate(10deg);
+    }
+  to {
+    -webkit-filter:hue-rotate(360deg);
+            filter:hue-rotate(360deg);
+    }
+}
+
+.centerStack {
+  align-items: center;
 }
