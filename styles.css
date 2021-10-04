@@ -179,7 +179,6 @@ p {
   text-transform: uppercase;
   text-shadow: 0 0 0.15em #1da9cc;
   user-select: none;
-  white-space: nowrap;
   filter: blur(0.007em);
   -webkit-animation: rainbow 4s steps(36) infinite;
   text-align: center;
@@ -203,4 +202,11 @@ p {
 
 .centerStack {
   align-items: center;
+}
+
+#email {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
