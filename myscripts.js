@@ -8,7 +8,6 @@ function convert(){
         document.getElementById('output').innerText = output;
     }
     if(hours > 12){
-        hours -= 12;
         let output = ("= " + hours.toString() + ":" + minutes + " am");
         document.getElementById('output').innerText = output;
     }
