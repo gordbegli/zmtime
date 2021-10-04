@@ -4,14 +4,17 @@ function convert(){
     hours += 4;
     console.log(hours);  
     if(hours < 12){
+        console.log("1");
         let output = ("= " + hours.toString() + ":" + minutes + " pm");
         document.getElementById('output').innerText = output;
     }
-    if(hours = 12){
+    else if(hours == 12){
+        console.log("2");
         let output = ("= " + hours.toString() + ":" + minutes + " am");
         document.getElementById('output').innerText = output;
     }
-    if(hours > 12){
+    else if(hours > 12){
+        console.log("3");
         hours -= 12;
         let output = ("= " + hours.toString() + ":" + minutes + " am");
         document.getElementById('output').innerText = output;
