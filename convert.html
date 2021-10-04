@@ -7,19 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZM TIME ORG</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript">
-       function convert(){
-          let hours = parseInt(document.getElementById('hours_input').value);
-          let minutes = document.getElementById('minutes_input').value;
-          hours += 4;
-          console.log(hours);  
-          if(hours >= 12){
-            document.getElementById("alex").style.visibility = "visible";
-          }
-          let output = ("= " + hours.toString() + ":" + minutes + " pm");
-          document.getElementById('output').innerText = output;
-       }
-    </script>
+    <script src="myscripts.js"></script>
 </head>
 <body>
     <!DOCTYPE html>
