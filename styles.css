@@ -249,7 +249,7 @@ input:focus {
 }
 
 #convert {
-  margin-left: .5em;
+  margin-left: .5em;  
 }
 
 button {
@@ -258,7 +258,7 @@ button {
   width: 200px;
   border: none;
   outline: none;
-  color: white;
+  color:pink;
   background: white;
   cursor: pointer;
   border-radius: 5px;
