@@ -317,3 +317,10 @@ button:hover:active:before {
   flex-wrap: wrap;
   flex-shrink: 3;
 }
+
+#buyform {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+}
