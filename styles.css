@@ -242,11 +242,11 @@ input:focus {
 }
 
 #form {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  align-self: center;
+  align-self: auto;
 }
 
 #convert {
@@ -322,4 +322,8 @@ button:hover:active:before {
   margin-top: .5em;
   display: flex;
   justify-content: center;
+}
+
+#profits {
+  font-size: 1em;
 }
