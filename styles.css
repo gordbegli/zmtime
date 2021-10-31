@@ -319,8 +319,7 @@ button:hover:active:before {
 }
 
 #buyform {
+  margin-top: .5em;
   display: flex;
-  width: 50%;
-  margin: 0 auto;
   justify-content: center;
 }
