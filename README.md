@@ -1,3 +1,3 @@
 # zmtime
 
-zmtime.org is the genesis of a new era where quantum bogosort will become a reality.
+The genesis of a new era of time keeping. One in which quantum bogosort will become reality.
